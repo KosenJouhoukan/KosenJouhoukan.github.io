@@ -1,205 +1,182 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="generator" content="Pelican" />
-        <title>test - テスト</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="test Atom Feed" />
-</head>
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">test</a></h1>
-                <nav><ul>
-                    <li class="active"><a href="/category/tesuto.html">テスト</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+		<title>高専情報館</title>
+		<meta name="description" content="">
+		<meta name="author" content="高専卒業生達">
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/firsttest.html">最初の投稿</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2019-02-24T00:00:00+09:00">
-                Published: 日 24 2月 2019
-        </abbr>
+		<link rel="stylesheet" href="/theme/css/foundation.css" />
+		<link rel="stylesheet" href="/theme/css/pygment/monokai.css" />
+		<link rel="stylesheet" href="/theme/css/custom.css" />
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/username.html">UserName</a>
-        </address>
-<p>In <a href="/category/tesuto.html">テスト</a>.</p>
-<p>tags: <a href="/tag/tesuto.html">テスト</a> <a href="/tag/tou-gao.html">投稿</a> </p>
-</footer><!-- /.post-info --><h2>最初の投稿です!!</h2>
-<p>Hello <strong>world!</strong> My name is <em>User</em> @Japan.</p>
-<p><a href="/secondtest.html">2番目のページ</a></p>
-<table>
-<thead>
-<tr>
-<th>テスト1</th>
-<th>テスト2</th>
-<th>テスト3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>テスト</td>
-<td>テスト</td>
-<td>テスト</td>
-</tr>
-</tbody>
-</table>
-<p><strong>ペリカンを使ってみた.</strong></p>
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello world!&#39;</span><span class="p">)</span>
-</code></pre></div>
 
-<div class="math">$$
-1+1=2
-$$</div>
-<div class="math">$$
-2+2=4
-$$</div>
-<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
+		<script src="/theme/js/modernizr.js"></script>
 
-    if (false) {
-        align = (screen.width < 768) ? "left" : align;
-        indent = (screen.width < 768) ? "0em" : indent;
-        linebreak = (screen.width < 768) ? 'true' : linebreak;
-    }
+		<!-- Feeds -->
 
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
 
-    var configscript = document.createElement('script');
-    configscript.type = 'text/x-mathjax-config';
-    configscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        availableFonts: ['STIX', 'TeX']," +
-        "        preferredFont: 'STIX'," +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
+		<!-- mathjax config similar to math.stackexchange -->
+		<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			jax: ["input/TeX", "output/HTML-CSS"],
+			tex2jax: {
+				inlineMath: [ ['$', '$'] ],
+				displayMath: [ ['$$', '$$']],
+				processEscapes: true,
+				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+			},
+			messageStyle: "none",
+			"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+		});
+		</script>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	</head>
+	<body>
+		<div class="off-canvas-wrap">
+			<div class="inner-wrap">
+				<!-- mobile top bar to activate nav -->
+				<nav class="tab-bar show-for-small">
+					<section class="left-small">
+						<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+					</section>
 
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-</script>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+					<section class="middle tab-bar-section">
+						<h1 class="title">高専情報館</h1>
+					</section>
+				</nav>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/math.html" rel="bookmark"
-                           title="Permalink to 2番目の投稿">2番目の投稿</a></h1>
-                </header>
+				<!-- mobile side bar nav -->
+				<aside class="left-off-canvas-menu">
+					<ul class="off-canvas-list">
+						<li><a href="">Home</a></li>
+						<li><label>Categories</label></li>
+							<li class="active"><a href="/category/tesuto.html">テスト</a></li>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2019-02-24T00:00:00+09:00">
-                Published: 日 24 2月 2019
-        </abbr>
+						<li><label>Links</label></li>
+							<li><a href="https://getpelican.com/">Pelican</a></li>
+							<li><a href="https://www.python.org/">Python.org</a></li>
+							<li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+							<li><a href="#">You can modify those links in your config file</a></li>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/username.html">UserName</a>
-        </address>
-<p>In <a href="/category/tesuto.html">テスト</a>.</p>
-<p>tags: <a href="/tag/tesuto.html">テスト</a> <a href="/tag/tou-gao.html">投稿</a> </p>
-</footer><!-- /.post-info -->                <p>簡単にブログ作成</p>
-                <a class="readmore" href="/math.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/secondtest.html" rel="bookmark"
-                           title="Permalink to 2番目の投稿">2番目の投稿</a></h1>
-                </header>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2019-02-24T00:00:00+09:00">
-                Published: 日 24 2月 2019
-        </abbr>
+						<li><label>Social</label></li>
+							<li><a href="#">Another social link</a></li>
+							<li><a href="#">You can add links in your config file</a></li>
+					</ul>	
+				</aside>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/username.html">UserName</a>
-        </address>
-<p>In <a href="/category/tesuto.html">テスト</a>.</p>
-<p>tags: <a href="/tag/tesuto.html">テスト</a> <a href="/tag/tou-gao.html">投稿</a> </p>
-</footer><!-- /.post-info -->                <p>簡単にブログ作成</p>
-                <a class="readmore" href="/secondtest.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-                </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="https://getpelican.com/">Pelican</a></li>
-                            <li><a href="https://www.python.org/">Python.org</a></li>
-                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+				<!-- top bar nav -->
+				<nav class="top-bar hide-for-small-only" data-topbar>
+					<ul class="title-area">
+						<li class="name">
+							<h1><a href="/">高専情報館</a></h1>
+						</li>
+					</ul>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+					<section class="top-bar-section">
+						<ul class="left">
+								<li class="active"><a href="/category/tesuto.html">テスト</a></li>
+						</ul>
+                        <ul class="right">                                                                                                                                           
+                                                                                                                                             
+                        </ul>  
+					</section>
+				</nav>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
-                </address><!-- /#about -->
+				<!-- Main Page Content and Sidebar -->
+				<section class="main-section">
+					<div class="row">
+						<!-- Main Content -->
+						<div class="medium-9 small-12 columns" role="content">
+							<div class="row">
+								<div class="small-12 columns">
+									<h2>Category: テスト</h2>
+								</div>
+							</div>
 
-                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+<article>
+	<h3><a href="/change_master.html">大学編入⇒他大学院</a></h3>
+	<h6>Written by <a href="/author/username.html">UserName</a> in <a href="/category/tesuto.html">テスト</a> on 土 23 2月 2019. Tags: <a href="/tag/tesuto.html">テスト</a>, <a href="/tag/tou-gao.html">投稿</a>, </h6>
+	<p>簡単にブログ作成</p>
+		<p class="continue"><a href="/change_master.html">Continue reading &raquo;</a></p>
+</article>
+<hr />
+<article>
+	<h3><a href="/job_hunting.html">高専卒・専攻科卒で就職体験談</a></h3>
+	<h6>Written by <a href="/author/username.html">UserName</a> in <a href="/category/tesuto.html">テスト</a> on 土 23 2月 2019. Tags: <a href="/tag/tesuto.html">テスト</a>, <a href="/tag/tou-gao.html">投稿</a>, </h6>
+	<p>簡単にブログ作成</p>
+		<p class="continue"><a href="/job_hunting.html">Continue reading &raquo;</a></p>
+</article>
+<hr />
+<article>
+	<h3><a href="/job_hunting_after_master.html">大学編入⇒大学院了就職体験談</a></h3>
+	<h6>Written by <a href="/author/username.html">UserName</a> in <a href="/category/tesuto.html">テスト</a> on 土 23 2月 2019. Tags: <a href="/tag/tesuto.html">テスト</a>, <a href="/tag/tou-gao.html">投稿</a>, </h6>
+	<p>簡単にブログ作成</p>
+		<p class="continue"><a href="/job_hunting_after_master.html">Continue reading &raquo;</a></p>
+</article>
+<hr />
+<article>
+	<h3><a href="/university_info_home.html">大学紹介</a></h3>
+	<h6>Written by <a href="/author/username.html">UserName</a> in <a href="/category/tesuto.html">テスト</a> on 土 23 2月 2019. Tags: <a href="/tag/tesuto.html">テスト</a>, <a href="/tag/tou-gao.html">投稿</a>, </h6>
+	<p>編入試験や編入後の生活情報</p>
+		<p class="continue"><a href="/university_info_home.html">Continue reading &raquo;</a></p>
+</article>
+<hr />
 
-</body>
+
+						</div>
+						<!-- End Main Content -->
+						<!-- Sidebar -->
+						<aside class="medium-3 hide-for-small-only columns">
+							<div class="panel">
+								<h5>Links</h5>
+								<ul class="side-nav">
+									<li><a href="https://getpelican.com/">Pelican</a></li>
+									<li><a href="https://www.python.org/">Python.org</a></li>
+									<li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+									<li><a href="#">You can modify those links in your config file</a></li>
+								</ul>
+							</div>
+
+							<div class="panel">
+								<h5>Tags</h5>
+								<ul class="tag-cloud">
+								</ul>
+							</div>
+
+
+							<div class="panel">
+								<h5>Social</h5>
+								<ul class="side-nav">
+									<li><a href="#">Another social link</a></li>
+									<li><a href="#">You can add links in your config file</a></li>
+								</ul>
+							</div>
+						</aside>
+						<!-- End Sidebar -->
+					</div>
+
+					<!-- Footer -->
+					<footer class="row">
+						<div class="medium-9 small-12">
+							<hr/>
+							<p class="text-center">Powered by <a href="http://getpelican.com">Pelican</a> and <a href="http://foundation.zurb.com/">Zurb Foundation</a>. Theme by <a href="http://hamaluik.com">Kenton Hamaluik</a>.</p>
+						</div>
+					</footer>
+					<!-- End Footer -->
+				</section>
+				<a class="exit-off-canvas"></a>
+			</div><!--off-canvas inner-->
+		</div><!--off-canvas wrap-->
+
+		<script src="/theme/js/jquery.js"></script>
+		<script src="/theme/js/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
+	</body>
 </html>
